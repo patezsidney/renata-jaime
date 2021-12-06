@@ -1,0 +1,383 @@
+@font-face {
+  font-family: Reey Regular;
+  src: url("../assets/fonts/reey-regular.otf");
+}
+
+:root {
+  --font: "Open Sans", sans-serif;
+  --title-font: "Reey Regular", sans-serif;
+  --primary-text-color: #0077b6;
+  --secondary-text-color: #03045e;
+  --background-default-color: #fff;
+}
+
+/* GERAL */
+h1,
+h2,
+h3 {
+  font-family: var(--title-font);
+}
+
+body {
+  font-family: var(--font);
+}
+/* GERAL */
+
+/* HEADER */
+header {
+  box-sizing: border-box;
+  width: 100vw;
+  min-height: 100vh;
+
+  padding: 40px 30px;
+
+  background-image: url("../assets/images/renataJaime-fundo-liso.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+
+  color: var(--background-default-color);
+}
+section {
+  width: 98%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.header__menu {
+  width: 100%;
+  text-align: center;
+}
+.header__menu h1 {
+  font-size: 2.2em;
+  margin-bottom: 50px;
+}
+.header__menu p {
+  font-size: 0.9em;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+}
+.menu__button {
+  margin: 30px auto;
+  width: 90%;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 25px;
+  background-color: var(--background-default-color);
+}
+.menu__button a {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 25px;
+  color: var(--primary-text-color);
+}
+.header__image {
+  display: none;
+}
+
+/* HEADER */
+
+/* MAIN */
+/* ODONTO */
+.main__odontopediatria {
+  text-align: center;
+  max-width: 1280px;
+
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 35px 25px;
+
+  color: var(--secondary-text-color);
+}
+.odonto__title h2 {
+  margin-top: 60px;
+  font-size: 2.3em;
+  color: var(--primary-text-color);
+}
+.odonto__title p {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+.odonto__content div {
+  margin: 60px auto;
+}
+.odonto__content div img {
+  width: 250px;
+}
+.odonto__content div p {
+  font-weight: bold;
+  font-size: 1.3em;
+  margin: 40px auto;
+}
+.main__button {
+  text-align: center;
+}
+.main__button a div {
+  margin: 0 auto;
+  height: 65px;
+  width: 90%;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-text-color);
+  font-size: 1.8em;
+  font-weight: bold;
+  line-height: 27px;
+  color: var(--background-default-color);
+  text-transform: uppercase;
+}
+/* ODONTO */
+
+/* BELEZA */
+.main__beleza {
+  width: 100%;
+  padding: 35px 25px;
+  box-sizing: border-box;
+
+  background-color: var(--primary-text-color);
+
+  text-align: center;
+
+  color: var(--background-default-color);
+}
+.main__beleza div h2 {
+  font-size: 2.5em;
+}
+.main__beleza div img {
+  margin: 30px auto;
+  width: 300px;
+}
+.main__beleza div p span {
+  font-weight: bold;
+}
+.main__beleza div a div {
+  margin: 40px auto;
+  height: 65px;
+  width: 70%;
+  min-width: 160px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-default-color);
+  font-size: 1.8em;
+  font-weight: bold;
+  line-height: 27px;
+  color: var(--primary-text-color);
+  text-transform: uppercase;
+}
+/* BELEZA */
+
+/* TIME */
+.main__time {
+  width: 100%;
+  padding: 35px 25px;
+  text-align: center;
+  box-sizing: border-box;
+
+  color: var(--secondary-text-color);
+}
+.main__time div h2 {
+  margin-top: 60px;
+  font-size: 2.5em;
+  color: var(--primary-text-color);
+}
+.main__time img {
+  width: 80%;
+  margin: 30px auto;
+}
+.main__time p {
+  font-weight: 700;
+}
+.main__time p span {
+  font-weight: 800;
+}
+.time__content-left {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.time__content-left div a div {
+  margin: 20px auto;
+  height: 65px;
+  width: 70%;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-text-color);
+  font-size: 1.8em;
+  font-weight: bold;
+  line-height: 27px;
+  color: var(--background-default-color);
+  text-transform: uppercase;
+}
+/* TIME */
+
+/* FOOTER */
+footer {
+  box-sizing: border-box;
+  padding: 35px 25px;
+  background-image: url("../assets/images/renataJaime-fundo-final.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer__nav {
+  display: flex;
+  justify-content: center;
+}
+.footer__nav a {
+  width: 60px;
+  height: 60px;
+  background-color: var(--background-default-color);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+.footer__nav div svg {
+  fill: var(--primary-text-color);
+  width: 45px;
+  height: 45px;
+}
+.footer__title {
+  padding: 0 20px;
+  text-align: center;
+}
+.footer__title h3 {
+  color: var(--background-default-color);
+  font-size: 1.8em;
+}
+
+/* FOOTER */
+
+/* MAIN */
+
+/* QUERY */
+@media screen and (min-width: 760px) {
+  /* HEADER */
+  header {
+    padding-bottom: 0;
+    display: flex;
+  }
+  section {
+    width: 98%;
+    max-width: 1280px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: stretch;
+  }
+  .header__menu {
+    width: 40%;
+  }
+  .header__menu h1 {
+    font-size: 3em;
+  }
+  .header__menu p {
+    font-size: 1.1em;
+  }
+  .header__menu nav {
+    max-width: 365px;
+    margin: 0 auto;
+  }
+  .header__image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .header__image img {
+    width: 100%;
+    max-width: 470px;
+  }
+
+  /* HEADER */
+  /* ODONTO */
+  .odonto__content {
+    display: flex;
+  }
+  .odonto__content div {
+    max-width: 230px;
+  }
+  .odonto__content div img {
+    width: 200px;
+  }
+  .main__button a div {
+    max-width: 280px;
+  }
+  /* ODONTO */
+  /* BELEZA */
+  .main__beleza {
+    max-width: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main__beleza div img {
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 70%;
+  }
+  .main__beleza div p {
+    max-width: 260px;
+  }
+  .beleza__content {
+    display: flex;
+  }
+  /* BELEZA */
+
+  /* TIME */
+  .main__time {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__time div h2 {
+    font-size: 3em;
+  }
+  .time__content-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .time__content-right p {
+    max-width: 600px;
+    margin-right: 75px;
+    text-align: left;
+  }
+  .time__content-right img {
+    margin-left: 75px;
+  }
+  .main__time img {
+    max-width: 400px;
+  }
+  .time__content-left {
+    flex-direction: row;
+  }
+  .time__content-left div p {
+    max-width: 600px;
+    margin-left: 75px;
+    text-align: right;
+  }
+  .time__content-left img {
+    margin-right: 75px;
+  }
+  .time__content-left div a div {
+    max-width: 230px;
+  }
+  /* TIME */
+}
+
+@media screen and (min-width: 900px) {
+  header {
+    background-image: url("../assets/images/renataJaime-fundo1.jpg");
+    background-position: center;
+  }
+}
+/* QUERY */
